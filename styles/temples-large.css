@@ -1,0 +1,43 @@
+/* Larger Screen View */
+@media screen and (min-width: 700px) {
+
+/* Header */
+header {
+    flex-wrap: nowrap;
+    padding: 1.5rem 5%;
+}
+
+/* Hide Hamburger Button */
+#menu-button {
+    display: none;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: auto;
+}
+
+nav a {
+    padding: 1rem 1.5rem;
+}
+
+/* Main Content */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Three Column Temple Gallery */
+.temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+figure img {
+    height: 200px;
+}
+
+}
