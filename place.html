@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Nigeria, the Giant of Africa. Explore its geography, population, culture, and weather.">
+    <meta name="author" content="Kalu Ogba Okala">
+    <title>Nigeria | The Giant of Africa</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source
+                    srcset="images/nigeria-large.webp"
+                    media="(min-width: 600px)">
+                <img
+                    src="images/nigeria-small.webp"
+                    alt="Beautiful landscape representing Nigeria"
+                    width="800"
+                    height="500">
+            </picture>
+        </div>
+
+        <section class="data">
+            <h2>Data</h2>
+            <div class="data-content">
+                <p><strong>Area:</strong> 923,768 km²</p>
+                <p><strong>Population:</strong> Approximately 230 million</p>
+                <p><strong>Capital:</strong> Abuja</p>
+                <p><strong>Languages:</strong> English and indigenous languages</p>
+                <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+                <p><strong>Time Zone:</strong> West Africa Time (WAT)</p>
+                <p><strong>Calling Code:</strong> +234</p>
+                <p><strong>Internet Domain:</strong> .ng</p>
+            </div>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <div class="weather-icon">
+                <img src="images/weather.svg" alt="Partly cloudy weather">
+            </div>
+
+            <div class="weather-content">
+                <p><strong>Condition:</strong> Partly Cloudy</p>
+                <p><strong>Temperature:</strong> <span id="temperature">28</span> °C</p>
+                <p><strong>Wind Speed:</strong> <span id="wind-speed">12</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Kalu Ogba Okala | Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
