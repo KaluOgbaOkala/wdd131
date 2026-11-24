@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4f8;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* Main */
+main {
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Form */
+form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldsets */
+fieldset {
+    border: 1px solid #b8c7d9;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-weight: bold;
+    color: #17365d;
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 0.8rem;
+    font-weight: 600;
+}
+
+/* Input fields */
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.4rem;
+    border: 1px solid #9eacba;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9fbfd;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Focus effect */
+select:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #2874a6;
+    border-color: #2874a6;
+}
+
+/* Rating */
+.rating {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.rating label {
+    text-align: center;
+    color: #e09b00;
+    font-size: 1.3rem;
+    cursor: pointer;
+    flex: 1;
+}
+
+.rating label span {
+    display: block;
+    font-size: 0.75rem;
+    color: #263238;
+}
+
+.rating input {
+    margin: 0.3rem auto;
+    cursor: pointer;
+}
+
+/* Checkbox fields */
+.instruction {
+    margin-bottom: 0.5rem;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+fieldset label:has(input[type="checkbox"]) {
+    font-weight: normal;
+    margin-top: 0.6rem;
+}
+
+/* Submit button */
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #17365d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2874a6;
+}
+
+/* Footer */
+footer {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Desktop layout */
+@media screen and (min-width: 700px) {
+    main {
+        max-width: 650px;
+    }
+
+    form {
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4f8;
+    color: #263238;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* Main */
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Confirmation Section */
+.confirmation {
+    background-color: white;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Confirmation Heading */
+.confirmation h2 {
+    color: #17365d;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+.confirmation p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* Review Counter */
+.review-counter {
+    background-color: #e8f0f8;
+    border: 1px solid #b8c7d9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.review-counter h3 {
+    color: #17365d;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+#reviewCount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2874a6;
+}
+
+/* Submit Another Review Link */
+.review-link {
+    display: inline-block;
+    background-color: #17365d;
+    color: white;
+    text-decoration: none;
+    padding: 0.9rem 1.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.review-link:hover {
+    background-color: #2874a6;
+}
+
+.review-link:focus {
+    outline: 3px solid #2874a6;
+    outline-offset: 3px;
+}
+
+/* Footer */
+footer {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Desktop Layout */
+@media screen and (min-width: 700px) {
+    .confirmation {
+        padding: 3rem;
+    }
+
+    .confirmation h2 {
+        font-size: 2.5rem;
+    }
+}
