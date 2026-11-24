@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore temples of The Church of Jesus Christ of Latter-day Saints around the world, including their locations, dedication dates, and sizes.">
+
+    <meta name="author" content="Kalu Ogba Okala">
+
+    <title>Temple Album | WDD 131 - Kalu Ogba Okala</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-content">
+
+            <h1>Temple Album</h1>
+
+            <button id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navigation">
+                ☰
+            </button>
+
+        </div>
+
+        <nav id="navigation" aria-label="Main navigation">
+
+            <a href="#" class="active">Home</a>
+
+            <a href="#">Old</a>
+
+            <a href="#">New</a>
+
+            <a href="#">Large</a>
+
+            <a href="#">Small</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h2>Explore Temples Around the World</h2>
+
+        <!-- JavaScript will generate the temple cards here -->
+
+        <div id="temples-container" class="temple-grid">
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            Kalu Ogba Okala | Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>

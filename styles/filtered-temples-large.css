@@ -1,0 +1,62 @@
+/* LARGE SCREEN LAYOUT */
+@media screen and (min-width: 768px) {
+
+    /* HEADER */
+    .header-content {
+        justify-content: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* HIDE HAMBURGER BUTTON */
+    #menu-button {
+        display: none;
+    }
+
+    /* NAVIGATION */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    nav a {
+        padding: 0.8rem 1.5rem;
+    }
+
+    /* TEMPLE GRID */
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* TEMPLE CARD */
+    .temple-card {
+        padding: 1.2rem;
+    }
+
+    .temple-card h2 {
+        font-size: 1.3rem;
+    }
+
+    /* MAIN HEADING */
+    main > h2 {
+        font-size: 2rem;
+    }
+}
+
+/* EXTRA LARGE SCREENS */
+@media screen and (min-width: 1200px) {
+
+    main {
+        max-width: 1400px;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
